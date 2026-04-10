@@ -12,8 +12,12 @@ Para ejecutar la simulación lo que debemos seguir los siguientes pasos
      1. Hacer una linea recta (Presionar 1)
      2. Hacer un circulo (Presionar 2)
      3. Hacer un cuadrado (Presionar 3)
+     4. Hacer una curva (Presionar 4)
 
 ## Resultados
+Los resultados que logramos obtener fueron los siguientes:
+1. Logramos darnos cuenta como el ruido afecta en la trayectoria de los robots. Al introducir esta variable hemos visto como los robots puedes desviarse un poco debido a esta variable, afectando sus rutas "ideales" (libres de ruido)
+2. Hemos podido ver como las diferentes velocidades en las ruedas afectan la trayectorias, ya sea realizando lineas rectas, curvas o circulos, incluyendo el como colocar una velocidad en negativo puede hacer que la ruta cambie de sentido.
 
 ## Preguntas de análisis
 1. ¿Qué ocurre cuando ambas ruedas tienen la misma velocidad?
