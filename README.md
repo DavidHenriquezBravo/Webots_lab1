@@ -7,7 +7,7 @@ En este laboratorio se experimentará la simulación de robots por medio de Webo
 Para ejecutar la simulación lo que debemos seguir los siguientes pasos
 1. Colocar el siguiente codigo en el cmd o terminal de tu dispositivo `git clone https://github.com/DavidHenriquezBravo/Webots_lab1.git`.
 2. Abre el webots y ve a **File > OpenWorld** y navega hasta la carpeta donde se clono el repositorio, entra a `worlds` y selecciona el archivo `.wbt`
-3. Una vez abierto el archivo debes asegurarte de que este seleccionado el control `controler.Py`, luego presionar el boton `>`
+3. Una vez abierto el archivo debes asegurarte de que este seleccionado el control `ControlerPy.py`, luego presionar el boton `>`
    * En este punto tienes 3 opciones
      1. Hacer una linea recta (Presionar 1)
      2. Hacer un circulo (Presionar 2)
