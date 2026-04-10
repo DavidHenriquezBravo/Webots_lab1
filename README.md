@@ -1,1 +1,26 @@
-# Webots_lab1
+# Webots Laboratorio1
+
+## Descripción del laboratorio
+En este laboratorio se experimentará la simulación de robots por medio de Webots. En esta simulación lograremos comprender el comportamiento cinemático de un robot móvil (E-Puck). Se experimentará colocando distintas velocidades en las ruedas para ver el comportamiento y como este va cambiando según la variación de esta.
+
+## Cómo ejecutar la simulación
+Para ejecutar la simulación lo que debemos seguir los siguientes pasos
+1. Colocar el siguiente codigo en el cmd o terminal de tu dispositivo `git clone `.
+2. Abre el webots y ve a **File > OpenWorld** y navega hasta la carpeta donde se clono el repositorio, entra a `worlds` y selecciona el archivo `.wbt`
+3. Una vez abierto el archivo debes presionar el boton `>`
+   * En este punto tienes 3 opciones
+     1. Hacer una linea recta (Presionar 1)
+     2. Hacer un circulo (Presionar 2)
+     3. Hacer un cuadrado (Presionar 3)
+
+## Resultados
+
+## Preguntas de análisis
+1. ¿Qué ocurre cuando ambas ruedas tienen la misma velocidad?
+   * El robot avanza en linea recta
+2. ¿Cómo cambia la trayectoria cuando las velocidades son diferentes?
+   * Cuando las velocidades son diferentes el robot tiende a girar, incluso haciendo un circulo
+3. ¿Qué ocurre cuando una rueda gira en sentido opuesto a la otra?
+   * Depende, si ambas ruedas cuentan con la misma velocidad el robot empieza a girar en circulos, en cambio si tienen diferentes velocidades simplemente girará o se movera en sentido contrario al como deberia hacerlo si es que ambas ruedas tuvieran el mismo sentido.
+4. ¿Qué tipo de movimiento permite dibujar un circulo?
+   * El movimiento que permite dibujar un circulo es cuando una rueda tiene una velocidad inferior a la otra
