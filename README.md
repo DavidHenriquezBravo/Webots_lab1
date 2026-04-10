@@ -19,8 +19,8 @@ Para ejecutar la simulación lo que debemos seguir los siguientes pasos
 1. ¿Qué ocurre cuando ambas ruedas tienen la misma velocidad?
    * El robot avanza en linea recta
 2. ¿Cómo cambia la trayectoria cuando las velocidades son diferentes?
-   * Cuando las velocidades son diferentes el robot tiende a girar, incluso haciendo un circulo
+   * Cuando las velocidades son diferentes el robot tiende a realizar una curva, incluso haciendo un circulo
 3. ¿Qué ocurre cuando una rueda gira en sentido opuesto a la otra?
-   * Depende, si ambas ruedas cuentan con la misma velocidad el robot empieza a girar en circulos, en cambio si tienen diferentes velocidades simplemente girará o se movera en sentido contrario al como deberia hacerlo si es que ambas ruedas tuvieran el mismo sentido.
+   * Depende, si ambas ruedas cuentan con la misma velocidad el robot empieza a realizar un circulo, en cambio si tienen diferentes velocidades girará o se movera en el sentido contrario al como deberia hacerlo si es que ambas ruedas tuvieran el mismo sentido.
 4. ¿Qué tipo de movimiento permite dibujar un circulo?
    * El movimiento que permite dibujar un circulo es cuando una rueda tiene una velocidad inferior a la otra
