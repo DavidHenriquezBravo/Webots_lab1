@@ -3,7 +3,7 @@
 # You may need to import some classes of the controller module. Ex:
 from controller import Robot, Motor, DistanceSensor, Keyboard
 from controller import Robot
-
+import random
 # create the Robot instance.
 robot = Robot()
 
@@ -33,15 +33,19 @@ motor_izq.setVelocity(0.0)
 # - perform simulation steps until Webots is stopping the controller
 while robot.step(timestep) != -1:
     key = kb.getKey()
+    
+    ruido_izq = random.uniform(-0.1, 0.1)
+    ruido_der = random.uniform(-0.1, 0.1)
+    
     if key == ord('1'):
        
-        motor_der.setVelocity(2.0)
-        motor_izq.setVelocity(2.0)
+        motor_der.setVelocity(2.0 + ruido_der)
+        motor_izq.setVelocity(2.0 + ruido_izq)
         
     elif key==ord('2'):
     
-        motor_der.setVelocity(5.0)
-        motor_izq.setVelocity(3.0)
+        motor_der.setVelocity(5.0 + ruido_der)
+        motor_izq.setVelocity(3.0 + ruido_izq)
         
     elif key == ord('3'):
         contador = 0
@@ -52,15 +56,15 @@ while robot.step(timestep) != -1:
         while robot.step(timestep)!= -1:
             if lados_completados < 4:
                 if estado == "AVANZAR":
-                    motor_izq.setVelocity(2.0)
-                    motor_der.setVelocity(2.0)
+                    motor_izq.setVelocity(2.0 + ruido_izq)
+                    motor_der.setVelocity(2.0 + ruido_der)
                     
                     if contador >= pasos_avance:
                         estado = "GIRAR"
                         contador = 0
                 elif estado == "GIRAR":
-                    motor_izq.setVelocity(2.0)
-                    motor_der.setVelocity(-2.0)
+                    motor_izq.setVelocity(2.0 + ruido_izq)
+                    motor_der.setVelocity(-2.0 + ruido_der)
                     
                     if contador >= pasos_giro:
                         estado = "AVANZAR"
@@ -70,6 +74,9 @@ while robot.step(timestep) != -1:
             else:
                 motor_izq.setVelocity(0.0)
                 motor_der.setVelocity(0.0)
+    elif key == ord('4'):
+        motor_der.setVelocity(2.0 + ruido_der)
+        motor_izq.setVelocity(1.5 + ruido_izq)
     pass
 
 # Enter here exit cleanup code.
