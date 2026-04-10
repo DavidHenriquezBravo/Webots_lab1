@@ -1,7 +1,7 @@
 # Webots Laboratorio1
 
 ## Descripción del laboratorio
-En este laboratorio se experimentará la simulación de robots por medio de Webots. En esta simulación lograremos comprender el comportamiento cinemático de un robot móvil (E-Puck). Se experimentará colocando distintas velocidades en las ruedas para ver el comportamiento y como este va cambiando según la variación de esta.
+En este laboratorio se experimentará la simulación de robots por medio de Webots. En esta simulación lograremos comprender el comportamiento cinemático de un robot móvil (E-Puck). Se experimentará colocando distintas velocidades en las ruedas para ver el comportamiento y como este va cambiando según la variación de esta, también se introducirá ruido para ver como varian los movimientos del robot.
 
 ## Cómo ejecutar la simulación
 Para ejecutar la simulación lo que debemos seguir los siguientes pasos
