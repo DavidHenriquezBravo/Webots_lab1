@@ -34,20 +34,21 @@ motor_izq.setVelocity(0.0)
 while robot.step(timestep) != -1:
     key = kb.getKey()
     
+    #Generamos ruido en cada paso
     ruido_izq = random.uniform(-0.1, 0.1)
     ruido_der = random.uniform(-0.1, 0.1)
     
-    if key == ord('1'):
+    if key == ord('1'): #Linea recta
        
         motor_der.setVelocity(2.0 + ruido_der)
         motor_izq.setVelocity(2.0 + ruido_izq)
         
-    elif key==ord('2'):
+    elif key==ord('2'): #Circulo
     
         motor_der.setVelocity(5.0 + ruido_der)
         motor_izq.setVelocity(3.0 + ruido_izq)
         
-    elif key == ord('3'):
+    elif key == ord('3'): #Cuadrado
         contador = 0
         estado = "AVANZAR"
         lados_completados = 0
@@ -74,9 +75,26 @@ while robot.step(timestep) != -1:
             else:
                 motor_izq.setVelocity(0.0)
                 motor_der.setVelocity(0.0)
-    elif key == ord('4'):
-        motor_der.setVelocity(2.0 + ruido_der)
-        motor_izq.setVelocity(1.5 + ruido_izq)
+                break
+    elif key == ord('4'): #Curva
+        pasos_curva = 0
+        
+        while robot.step(timestep) != 1:
+            motor_der.setVelocity(2.0 + ruido_der)
+            motor_izq.setVelocity(1.5 + ruido_izq)
+            pasos_curva += 1
+            if pasos_curva >= 300: #Aproximadamente 90°
+                motor_izq.setVelocity(2.0 + ruido_izq)
+                motor_der.setVelocity(2.0 + ruido_der)
+                break
+    
+    elif key == ord('5'): #Rotacion en el lugar
+        motor_izq.setVelocity(2.0)
+        motor_der.setVelocity(-2.0)
+    
+    elif key == ord('0'): #Detenerse
+        motor_izq.setVelocity(0.0)
+        motor_der.setVelocity(0.0)
     pass
 
 # Enter here exit cleanup code.
