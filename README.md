@@ -18,6 +18,8 @@ Para ejecutar la simulación lo que debemos seguir los siguientes pasos
      
      *No se puede detener el robot mientras hace un cuadrado.
 
+     [Video robot en acción](https://drive.google.com/file/d/1UQagbf9bnLzrRIG1tCoTKSmIS6KhGd9I/view?usp=sharing)
+
 ## Resultados
 Los resultados que logramos obtener fueron los siguientes:
 1. Logramos darnos cuenta cómo el ruido afecta en la trayectoria de los robots. Al introducir esta variable hemos visto como los robots puedes desviarse un poco al avanzar, afectando sus rutas "ideales" (libres de ruido).
